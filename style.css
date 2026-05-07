@@ -1,4 +1,4 @@
-.banner {background: url("img3.jpg") center/cover no-repeat;
+.banner {background: url("images/img3.jpg") center/cover no-repeat;
     height: 300px;
     display: flex;
     align-items: center;
@@ -45,11 +45,9 @@ section{
     border-radius: 10px;
 }
 .img1 {
-    /* float: left; */
     display: block;
     width: 500px;
     margin: auto;
-    /* height: 200px; */
 }
 .img4 {
     display: block;
