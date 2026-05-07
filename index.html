@@ -10,8 +10,8 @@
 
 <body>
     <header class="banner">
-        <div>
-            <h1 id="top"> Теория тестирования </h1>
+        <div id="top">
+            <h1> Теория тестирования </h1>
         </div>
     </header>
 
@@ -26,18 +26,18 @@
     </div>
     <section id="section1">
         <h2> QM, QA, QC, testing</h2>
-        
+
         <div>
             <p> Управление качеством (quality management, QM) - скоординированные действия по организации и контролю
                 компании в отношении качества: </p>
-                            <ul>
+            <ul>
                 <li>установление целей и политики качества;</li>
                 <li>планирование качества;</li>
                 <li>обеспечение качества;</li>
                 <li>контроль качества;</li>
                 <li>улучшение качества.</li>
             </ul>
-                <img src="img1.jpg" class="img1" title="Quality management, QM">
+            <img src="images/img1.jpg" class="img1" title="Quality management, QM">
 
             <p> Обеспечение качества (quality assurance, QA) - набор мероприятий, проводимых в процессе разработки
                 продукта
@@ -46,7 +46,7 @@
                 <li>выпускаемого продукта;</li>
                 <li>и процесса его разработки.</li>
             </ul>
-            <img src="img4.jpg" class="img4" title="Quality assurance, QA">
+            <img src="images/img4.jpg" class="img4" title="Quality assurance, QA">
             <p> Контроль качества (quality control, QC) - набор мероприятий, проводимых в процессе разработки продукта,
                 для
                 постоянного получения информации о:</p>
@@ -76,7 +76,7 @@
     </section>
     <section id="section3">
         <h2> 7 принципов тестирования </h2>
-        <img src="img2.jpg" class="right" title="7 принципов тестирования">
+        <img src="images/img2.jpg" class="right" title="7 принципов тестирования">
         <ol>
             <li>Тестирование демонстрирует наличие дефектов, а не их отсутствие.
                 <p> Тестирование подтверждает, что баги есть, но не доказывает, что их нет. </p>
@@ -109,18 +109,43 @@
     </section>
     <section id="section4">
         <h2> Форма обратной связи </h2>
-        <form>
-            <input type="text" placeholder="Фамилия">
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Отчество">
-            <input type="email" placeholder="Еmail">
-            <input type="date">
-            <textarea placeholder="Коментарии"> </textarea>
-            <label>
-                <input type="checkbox"> Я не робот
-            </label>
-            <button type="reset"> Очистить</button>
-            <button type="submit"> Отправить</button>
+        <form action="#" method="post">
+            <div>
+                <label>Фамилия:</label><br>
+                <input type="text" name="lastname" required>
+            </div>
+            <div>
+                <label>Имя:</label><br>
+                <input type="text" name="firstname" required>
+            </div>
+            <div>
+                <label>Отчество:</label><br>
+                <input type="text" name="middlename">
+            </div>
+            <br>
+            <div>
+                <label>Эл. адрес:</label><br>
+                <input type="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <label>Дата рождения:</label><br>
+                <input type="date" name="birthday">
+            </div>
+            <br>
+            <div>
+                <label>Комментарий:</label><br>
+                <textarea name="comment" rows="4" cols="30"></textarea>
+            </div>
+            <br>
+            <div>
+                <label>
+                    <input type="checkbox" name="not_robot" required> Я не робот
+                </label>
+            </div>
+            <br>
+            <button type="reset">Очистить</button>
+            <button type="submit">Отправить</button>
         </form>
         <a href="#top"> К началу</a>
         <footer>
@@ -132,4 +157,5 @@
         </footer>
     </section>
 </body>
+
 </html>
